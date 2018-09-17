@@ -1,0 +1,16 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "git.autofetch": true,
+    "keyboard.dispatch": "keyCode",
+    "editor.minimap.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "vim.useCtrlKeys": false,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "workbench.colorTheme": "Rebellion (rainglow)",
+    "editor.formatOnSave": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.currentLine.enabled": false
+}
