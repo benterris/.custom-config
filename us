@@ -818,6 +818,7 @@ xkb_symbols "colemak" {
 // often than registered, I moved registered to be next to copyright and added
 // ediaeresis and idiaeresis. - Adriaan
 
+// ben
 partial alphanumeric_keys
 xkb_symbols "altgr-intl" {
 
@@ -838,6 +839,8 @@ xkb_symbols "altgr-intl" {
    key <AD02> { [        w, W,           egrave,       Egrave          ] };
    key <AC01> { [        a, A,           agrave,       Agrave          ] };
    key <AB03> { [        c, C,           ccedilla,     Ccedilla        ] };
+   key <AD07> {	[	 u, U,           ugrave,       Ugrave          ] };
+   key <AD11> {	[ bracketleft,	braceleft,dead_diaeresis, dead_diaeresis]};
 
 // map hjkl+altgr to arrows
    key <AC06> { [        h, H,           Left,         Left            ] };

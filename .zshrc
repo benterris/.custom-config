@@ -106,6 +106,8 @@ bindkey -v
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias xcl="xclip -selection clipboard"
 alias rmt="gio trash"
+alias brg="xbacklight -set"
+
 alias cdc="cd .."
 alias cdcc="cd ../.."
 alias cdccc="cd ../../.."
