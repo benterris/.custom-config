@@ -1,0 +1,68 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+  close_term = <Primary>w
+  cycle_next = <Primary>Tab
+  cycle_prev = <Primary><Shift>Tab
+  split_horiz = <Primary><Shift>o
+  split_vert = <Primary><Shift>e
+  toggle_scrollbar = <Primary><Shift>l
+  zoom_out = <Primary>minus
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#171717"
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = Menlo 10
+    foreground_color = "#e8e4d6"
+    palette = "#000000:#cd0000:#178e07:#ffe34b:#3c2de8:#b85300:#0b9e98:#e5e5e5:#7f7f7f:#ff0000:#10d100:#ffff00:#3595ff:#c98259:#54d4c6:#ffffff"
+    scroll_on_output = True
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[base]]
+    background_color = "#ffffff"
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = Tlwg Mono Bold 10
+    foreground_color = "#000000"
+    palette = "#ffffff:#000000:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#ffffff:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
+    use_system_font = False
+  [[defaultCopy]]
+    background_color = "#171717"
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = Latin Modern Mono 10
+    foreground_color = "#e8e4d6"
+    palette = "#000000:#cd0000:#178e07:#ffe34b:#3c2de8:#b85300:#0b9e98:#e5e5e5:#7f7f7f:#ff0000:#10d100:#ffff00:#3595ff:#c98259:#54d4c6:#ffffff"
+    scroll_on_output = True
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[t3]]
+    background_color = "#fbf1c7"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#3c3836"
+    palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
+  [[white]]
+    background_color = "#ffffff"
+    cursor_blink = False
+    cursor_color = "#000000"
+    font = Fixedsys Excelsior 3.01 10
+    foreground_color = "#000000"
+    palette = "#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000:#000000"
+    scroll_on_output = True
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
