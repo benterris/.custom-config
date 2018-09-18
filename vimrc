@@ -1,5 +1,5 @@
 set incsearch
-" set number
+set number
 " set clipboard=unnamedplus
 syntax on
 
