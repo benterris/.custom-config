@@ -107,6 +107,8 @@ bindkey -v
 alias xcl="xclip -selection clipboard"
 alias rmt="gio trash"
 alias brg="xbacklight -set"
+alias cat="bat"
+
 
 alias cdc="cd .."
 alias cdcc="cd ../.."
