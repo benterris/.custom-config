@@ -108,6 +108,7 @@ alias xcl="xclip -selection clipboard"
 alias rmt="gio trash"
 alias brg="xbacklight -set"
 alias cat="bat"
+alias du1="du . -h --max-depth=1"
 
 
 alias cdc="cd .."
