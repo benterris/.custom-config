@@ -1,119 +1,131 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-        "key": "ctrl+[Backslash]",
-        "command": "workbench.action.splitEditor"
-    },
-    {
-        "key": "ctrl+[IntlBackslash]",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "ctrl+[Slash]",
-        "command": "editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+[Period]",
-        "command": "-editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+[Minus]",
-        "command": "workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+6",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+right",
-        "command": "cursorWordEndRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "-cursorWordEndRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+right",
-        "command": "cursorWordEndRightSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+right",
-        "command": "-cursorWordEndRightSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+left",
-        "command": "cursorWordStartLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+left",
-        "command": "-cursorWordStartLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "cursorWordStartLeftSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+left",
-        "command": "-cursorWordStartLeftSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+backspace",
-        "command": "workbench.action.terminal.deleteWordLeft",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+backspace",
-        "command": "-workbench.action.terminal.deleteWordLeft",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "meta+tab",
-        "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+tab",
-        "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "shift+meta+tab",
-        "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "meta+f12",
-        "command": "editor.action.goToTypeDefinition"
-    }
+  {
+    "key": "ctrl+[Backslash]",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+[Slash]",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+[Period]",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+[Minus]",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+right",
+    "command": "cursorWordEndRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "-cursorWordEndRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "cursorWordEndRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "-cursorWordEndRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+left",
+    "command": "cursorWordStartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "-cursorWordStartLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "cursorWordStartLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "-cursorWordStartLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+backspace",
+    "command": "workbench.action.terminal.deleteWordLeft",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "-workbench.action.terminal.deleteWordLeft",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "meta+tab",
+    "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "shift+meta+tab",
+    "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "meta+f12",
+    "command": "editor.action.goToTypeDefinition"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "-workbench.action.focusSideBar"
+  }
 ]
