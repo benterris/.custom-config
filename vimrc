@@ -1,8 +1,13 @@
 set incsearch
+
+" show line number and set their color
 set number
 highlight LineNr ctermfg=darkgrey
-" set clipboard=unnamedplus
+
 syntax on
+
+" Map ctrl-backspace to delete the previous word in insert mode
+noremap! <C-h> <C-w>
 
 
 " use ctrl-j/k to move to the visual line below/above
