@@ -7,12 +7,12 @@
   "editor.cursorBlinking": "solid",
   "vim.useCtrlKeys": false,
   "terminal.integrated.shell.linux": "/bin/zsh",
-  "workbench.colorTheme": "Rebellion (rainglow)",
   "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.currentLine.enabled": false,
   "python.pythonPath": "/usr/bin/python3",
-  "editor.fontFamily": "'Menlo', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+  "editor.fontFamily": "'Menlo', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "workbench.colorTheme": "Monokai Dimmed"
 }
