@@ -111,6 +111,12 @@ alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
 alias goo="google-chrome-stable"
 
+# Turn a file into html and open it in chrome (for annoying formats)
+function tohtml() {
+    pandoc -s -t html -i "$1" -o "$1.html"
+    google-chrome-stable "$1.html"
+}
+
 
 alias cdc="cd .."
 alias cdcc="cd ../.."
