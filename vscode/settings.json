@@ -14,5 +14,5 @@
   "gitlens.currentLine.enabled": false,
   "python.pythonPath": "/usr/bin/python3",
   "editor.fontFamily": "'Menlo', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "workbench.colorTheme": "Monokai Dimmed"
+  "workbench.colorTheme": "Rebellion (rainglow)"
 }

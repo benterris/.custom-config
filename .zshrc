@@ -109,7 +109,7 @@ alias rmt="gio trash"
 alias brg="xbacklight -set"
 alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
-alias gcs="google-chrome-stable"
+alias goo="google-chrome-stable"
 
 
 alias cdc="cd .."
