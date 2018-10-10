@@ -75,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 bindkey -v
+bindkey '^H' backward-kill-word
 
 # User configuration
 
