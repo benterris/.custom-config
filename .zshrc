@@ -106,7 +106,7 @@ bindkey '^H' backward-kill-word
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias xcl="xclip -selection clipboard"
-alias rmt="gio trash"
+alias trm="gio trash"
 alias brg="xbacklight -set"
 alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
