@@ -1,6 +1,4 @@
 {
-  "window.zoomLevel": 0,
-  "editor.fontSize": 16,
   "git.autofetch": true,
   "keyboard.dispatch": "keyCode",
   "editor.minimap.enabled": false,
@@ -13,6 +11,10 @@
   },
   "gitlens.currentLine.enabled": false,
   "python.pythonPath": "/usr/bin/python3",
-  "editor.fontFamily": "'Menlo', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "workbench.colorTheme": "Rebellion (rainglow)"
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Rebellion (rainglow)",
+  "prettier.singleQuote": true,
+  "window.zoomLevel": 2,
+  "editor.fontSize": 13
 }

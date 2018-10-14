@@ -23,13 +23,14 @@
     background_color = "#171717"
     cursor_blink = False
     cursor_color = "#aaaaaa"
-    font = Menlo 10
+    font = Monospace 12
     foreground_color = "#e8e4d6"
     palette = "#000000:#cd0000:#178e07:#ffe34b:#3c2de8:#b85300:#0b9e98:#e5e5e5:#7f7f7f:#ff0000:#10d100:#ffff00:#3595ff:#c98259:#54d4c6:#ffffff"
     scroll_on_output = True
     scrollback_lines = 1000
     scrollbar_position = hidden
     show_titlebar = False
+    use_system_font = False
   [[base]]
     background_color = "#ffffff"
     cursor_blink = False

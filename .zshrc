@@ -106,7 +106,7 @@ bindkey '^H' backward-kill-word
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias xcl="xclip -selection clipboard"
-alias trm="gio trash"
+alias tmr="gio trash"
 alias brg="xbacklight -set"
 alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
@@ -119,11 +119,11 @@ function tohtml() {
 }
 
 
-alias cdc="cd .."
-alias cdcc="cd ../.."
-alias cdccc="cd ../../.."
-alias cdcccc="cd ../../../.."
-alias cdccccc="cd ../../../../.."
+alias cdd="cd .."
+alias cddd="cd ../.."
+alias cdddd="cd ../../.."
+alias cddddd="cd ../../../.."
+alias cdddddd="cd ../../../../.."
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
