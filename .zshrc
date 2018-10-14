@@ -111,6 +111,7 @@ alias brg="xbacklight -set"
 alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
 alias goo="google-chrome-stable"
+alias grep="grep -i"
 
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {
