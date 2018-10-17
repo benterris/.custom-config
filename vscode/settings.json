@@ -16,5 +16,8 @@
   "workbench.colorTheme": "Rebellion (rainglow)",
   "prettier.singleQuote": true,
   "window.zoomLevel": 2,
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "gitlens.codeLens.enabled": false,
+  "terminal.integrated.fontSize": 11,
+  "editor.tabSize": 2
 }
