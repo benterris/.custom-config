@@ -11,13 +11,18 @@
   },
   "gitlens.currentLine.enabled": false,
   "python.pythonPath": "/usr/bin/python3",
-  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "Rebellion (rainglow)",
   "prettier.singleQuote": true,
-  "window.zoomLevel": 2,
-  "editor.fontSize": 13,
+  "window.zoomLevel": 0,
   "gitlens.codeLens.enabled": false,
-  "terminal.integrated.fontSize": 11,
-  "editor.tabSize": 2
+  "terminal.integrated.fontSize": 13,
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "prettier.eslintIntegration": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tslintIntegration": true,
+  "workbench.colorTheme": "Rebellion (rainglow)",
+  "editor.fontSize": 20
 }

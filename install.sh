@@ -7,3 +7,4 @@ ln -sf "/home/$SUDO_USER/.custom-config/rebellion.json" "/home/$SUDO_USER/.vscod
 ln -sf "/home/$SUDO_USER/.custom-config/us" "/usr/share/X11/xkb/symbols/us"
 ln -sf "/home/$SUDO_USER/.custom-config/terminator-config" "/home/$SUDO_USER/.config/terminator/config"
 ln -sf "/home/$SUDO_USER/.custom-config/vimrc" "/home/$SUDO_USER/.vim/vimrc"
+ln -sf "/home/$SUDO_USER/.custom-config/.gitconfig" "/home/$SUDO_USER/.gitconfig"
