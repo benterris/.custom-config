@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH=$PATH:~/.local/bin
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/benjamin/.oh-my-zsh"
@@ -74,8 +76,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-bindkey -v
+# bindkey -v
 bindkey '^H' backward-kill-word
+bindkey '^o' kill-region
 
 # User configuration
 
@@ -112,6 +115,8 @@ alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
 alias goo="google-chrome-stable"
 alias grep="grep -i"
+alias py="python3"
+alias v="vim"
 
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {
