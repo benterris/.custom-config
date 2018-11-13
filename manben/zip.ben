@@ -1,0 +1,8 @@
+Compress files into a .zip archive
+
+# Usage
+
+Zip all the contents of the cwd (including subdirectories and contents) and give it the name data.zip:
+`zip -r data *`
+
+

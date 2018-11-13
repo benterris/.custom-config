@@ -1,0 +1,10 @@
+Manipulate text from the command line
+
+### Examples
+
+sed -r -e 's/([0-9]*)&/\1\n/g' file1 > file2  # (supports capturing groups with \1 reffering to the first group between parenthesis, etc)
+
+### Options
+
+-i operates in place (sed -i -r 's/foo/bar/' filename)
+-r use extended regex

@@ -1,0 +1,9 @@
+# Find files
+
+## Options
+
+-exec : executes the following command until `;` is encountered and replacing `{}` with the found files  
+ex:
+`find . -type f -exec chmod 644 {} \;` changes the permission of all the files to 644
+`find . -type d -exec chmod 755 {} \;` changes the permission of all the directories to 755
+ 

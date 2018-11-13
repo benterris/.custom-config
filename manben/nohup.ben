@@ -1,0 +1,5 @@
+Start a process in bg without taking the current shell
+
+## Example
+
+`nohup nm-applet &` : start the network manager gui

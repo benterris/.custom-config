@@ -1,0 +1,3 @@
+`virtualenv env` to create an env
+`source env/bin/activate` to source it
+`deactivate` to exit

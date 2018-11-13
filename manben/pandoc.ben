@@ -1,0 +1,13 @@
+## USAGE
+
+`pandoc -f markdown -t html hello.txt -o hola.html`
+
+
+## OPTIONS
+
+-s produce a standalone doc (ie with <head> tags for html, etc)
+-o output file
+-f from format (-f markdown...)
+-t to format (-t html...)
+
+

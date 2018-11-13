@@ -1,0 +1,8 @@
+
+Set wifi network priority
+=========================
+
+Use `nmcli`
+nmcli c mod <con_name> connection.autoconnect-priority <X>
+
+(to list them: `nmcli c s`)

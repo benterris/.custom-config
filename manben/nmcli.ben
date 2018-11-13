@@ -1,0 +1,10 @@
+cli tool to control NetworkManager
+
+# USAGE
+
+List all the connections:
+`nmcli c s`
+
+Change priority of a connection:
+`nmcli c mod <con_name> connection.autoconnect-priority <X>`  (with high X = high priority)
+

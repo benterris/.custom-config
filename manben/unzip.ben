@@ -1,0 +1,10 @@
+Extract content of a .zip archive
+
+# Usage
+
+Extract all the files into the /tmp dir:
+`unzip pix.zip -d /tmp`
+
+To only list the files:
+`unzip -l pix.zip`
+

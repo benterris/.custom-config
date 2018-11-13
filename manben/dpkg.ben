@@ -1,0 +1,12 @@
+### Description
+
+Install packages
+
+### Examples
+
+To install a .deb:
+sudo dpkg -i foo.deb
+
+### Options
+
+-i install

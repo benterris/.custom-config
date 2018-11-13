@@ -1,0 +1,28 @@
+ZLE shortcuts
+=============
+
+(full man page: zshzle)
+
+C-u : delete whole input
+C-k : delete everything to the right
+C-o : delete everything to the left
+
+C-x, C-e : open the line in $EDITOR
+
+C-r : enter search mode (repeat ctrl + r to cycle through)
+C-g : escape from search mode
+
+C-l : clear
+C-_ : undo last change
+
+C-a : jump to beginning of line
+C-e : jump to end of line
+
+!abc : execute last command starting with `abc` (prompts for confirm first)
+
+bindkey '\ew' : shows what alt+w is binded to
+bindkey -l : list the available commands
+
+\ex : open command prompt
+	Interesting commands:
+	where-is: shows the keybinding for a specific command

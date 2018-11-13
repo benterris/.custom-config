@@ -1,0 +1,13 @@
+
+Sort files in the standard output
+
+# USAGE
+
+Sort du output by size:
+`du . -ah | sort -h`
+
+
+# OPTIONS
+
+-h   sort relatively to size, but when size is expressed in human-readable format
+

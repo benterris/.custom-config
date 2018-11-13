@@ -1,0 +1,16 @@
+#!/bin/bash
+
+edit_flag=false
+
+while getopts 'e' flag; do
+  case "$flag" in
+    e) edit_flag='true' ;;
+  esac
+done
+
+if [ $edit_flag = true ]
+then 
+   vim "$HOME/man/manben/$2.ben"
+else
+   less "$HOME/man/manben/$1.ben"
+fi

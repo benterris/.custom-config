@@ -1,0 +1,15 @@
+
+
+### Example
+
+rsync -av --exclude-from=FILENAME source dest 
+
+### Options
+
+-a archive (quick way to mean you want to preserve almost everything)
+-v verbose
+--exclude-from=FILE exclude some patterns listed in a file, separated with newlines. Ex:
+```
+*cache*
+*.git*
+```
