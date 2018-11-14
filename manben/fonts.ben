@@ -1,0 +1,6 @@
+# Font util commands
+
+(Not a command but list of useful things)  
+
+`fc-cache -v -f` to reload the font cache
+`fc-list` to list the installed fonts
