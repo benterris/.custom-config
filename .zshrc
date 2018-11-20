@@ -77,8 +77,13 @@ source $ZSH/oh-my-zsh.sh
 
 
 # bindkey -v
+
+# Bind ctrl-backspace to delete previous word
 bindkey '^H' backward-kill-word
-bindkey '^o' kill-region
+# Delete to the end of line
+bindkey '^O' kill-region
+# Edit the line in $EDITOR
+bindkey '^X' edit-command-line
 
 # User configuration
 
