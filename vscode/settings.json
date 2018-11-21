@@ -27,5 +27,6 @@
   "workbench.panel.defaultLocation": "right",
   "editor.detectIndentation": false,
   "vetur.format.defaultFormatter.html": "prettyhtml",
-  "terminal.integrated.fontSize": 15
+  "terminal.integrated.fontSize": 15,
+  "vim.foldfix": true
 }
