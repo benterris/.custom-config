@@ -98,6 +98,7 @@ bindkey '^X' edit-command-line
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -122,6 +123,7 @@ alias goo="google-chrome-stable"
 alias grep="grep -i"
 alias py="python3"
 alias v="vim"
+alias rr="ranger"
 
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {
