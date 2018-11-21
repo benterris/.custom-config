@@ -3,8 +3,12 @@
   "keyboard.dispatch": "keyCode",
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
-  "vim.useCtrlKeys": false,
   "terminal.integrated.shell.linux": "/bin/zsh",
+  "vim.useCtrlKeys": false,
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-v>": true
+  },
   "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
