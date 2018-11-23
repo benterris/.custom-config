@@ -4,3 +4,5 @@
 
 `fc-cache -v -f` to reload the font cache
 `fc-list` to list the installed fonts
+
+Font files are in /usr/share/fonts

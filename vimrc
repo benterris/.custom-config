@@ -4,6 +4,16 @@ set incsearch
 set number
 highlight LineNr ctermfg=darkgrey
 
+" ignore case during search
+set ignorecase
+" case-sensitive only if capitals in search
+set smartcase
+
+" highlight search results
+set hlsearch
+" double escape to turn off highlighting when searching is done
+nnoremap <esc><esc> :silent! nohls<cr>
+
 syntax on
 
 " Map ctrl-backspace to delete the previous word in insert mode
