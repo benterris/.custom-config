@@ -9,6 +9,12 @@
     "<C-d>": false,
     "<C-v>": true
   },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["Z", "Z"],
+      "commands": [":w"]
+    }
+  ],
   "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
