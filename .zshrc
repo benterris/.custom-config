@@ -124,6 +124,7 @@ alias grep="grep -i"
 alias py="python3"
 alias v="vim"
 alias rr="ranger"
+alias gpom="git push origin master"
 
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {
