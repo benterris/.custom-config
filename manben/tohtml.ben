@@ -1,0 +1,10 @@
+# DESCRIPTION
+
+Command to preview annoying formats (like microsoft office)
+Turn a file into html using pandoc, and opens it in google chrome.
+
+# USAGE
+
+`tohtml worddocument.docx`
+
+

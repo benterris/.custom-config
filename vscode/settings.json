@@ -38,5 +38,6 @@
   "editor.detectIndentation": false,
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "terminal.integrated.fontSize": 15,
-  "vim.foldfix": true
+  "vim.foldfix": true,
+  "explorer.confirmDragAndDrop": false
 }

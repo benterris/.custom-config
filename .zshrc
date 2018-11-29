@@ -132,6 +132,11 @@ function tohtml() {
     google-chrome-stable "$1.html"
 }
 
+# Create a dir and cd into it
+function mkcd() {
+    mkdir -p -- "$1" && cd -P -- "$1"
+}
+
 
 alias cdd="cd .."
 alias cddd="cd ../.."

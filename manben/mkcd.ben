@@ -1,0 +1,5 @@
+Create a directory and cd into it after creation.
+
+# USAGE
+
+`mkcd hello` : create the `hello` directory and cd into it
