@@ -39,5 +39,6 @@
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "terminal.integrated.fontSize": 15,
   "vim.foldfix": true,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "vim.useSystemClipboard": true
 }
