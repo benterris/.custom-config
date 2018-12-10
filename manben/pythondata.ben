@@ -1,0 +1,15 @@
+# DATA STRUCTURE USAGE IN PYTHON
+
+Quickest data structures for some usages
+
+## INCLUDE TEST
+
+set() much quicker than list for `in`
+
+## INSERT AND REMOVE
+
+blist() package: insert and remove in O(log(n))
+
+
+
+
