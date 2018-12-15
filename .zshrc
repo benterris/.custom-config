@@ -125,6 +125,7 @@ alias py="python3"
 alias v="vim"
 alias rr="ranger"
 alias gpom="git push origin master"
+alias pwg="pwgen -sy 25 1"
 
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {

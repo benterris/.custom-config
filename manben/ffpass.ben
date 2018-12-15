@@ -1,0 +1,15 @@
+Utility to copy saved passwords from the Chrome pw manager to the Firefox one (and vice versa)
+
+# Chrome -> Firefox
+
+- Need at least python3.7 installed
+	- Install binary somewhere (like /opt)
+	- Use Python-3.7.X/python -m pip install ffpass to install it
+	- Change ffpass exec to list the correct python version after the #!
+- Then export passwords from Chrome to csv format `pw.csv`
+- Then:
+`ffpass import --from pw.csv`
+
+- Caution: for this to work, firefox pw database should be initialized, so you need to save at least one pw from firefox directly to create it
+
+	

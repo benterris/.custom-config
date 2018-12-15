@@ -1,0 +1,9 @@
+# PDF MANIPULATION TOOL
+
+## USAGE
+
+To concatenate two pdfs (cat) :
+`pdftk first.pdf second.pdf cat output merged.pdf` create a new pdf with second.pdf appended to first.pdf
+
+Selecting a subset of pages is possible:
+`pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8 output combined.pdf`
