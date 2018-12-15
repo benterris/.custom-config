@@ -1,0 +1,9 @@
+
+# EXAMPLE
+
+`ln -s /path/to/real/file linkName`
+
+# OPTIONS
+
+-s make symbolic link
+-f force (if the linkName we want to set is already a file or a link, overwrite it)

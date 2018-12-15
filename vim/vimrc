@@ -1,5 +1,7 @@
 set incsearch
 
+colo mydelek
+
 " show line number and set their color
 set number
 highlight LineNr ctermfg=darkgrey
