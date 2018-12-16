@@ -40,5 +40,6 @@
   "terminal.integrated.fontSize": 15,
   "vim.foldfix": true,
   "explorer.confirmDragAndDrop": false,
-  "vim.useSystemClipboard": true
+  "vim.useSystemClipboard": true,
+  "editor.cursorSmoothCaretAnimation": true
 }
