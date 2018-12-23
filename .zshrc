@@ -120,6 +120,7 @@ alias brg="xbacklight -set"
 alias cat="bat"
 alias du1="du . -ha --max-depth=1 | sort -h"
 alias goo="google-chrome-stable"
+alias ff="firefox-quantum"
 alias grep="grep -i"
 alias py="python3"
 alias v="vim"
@@ -130,7 +131,7 @@ alias pwg="pwgen -sy 25 1"
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {
     pandoc -s -t html -i "$1" -o "$1.html"
-    google-chrome-stable "$1.html"
+    firefox-quantum "$1.html"
 }
 
 # Create a dir and cd into it
