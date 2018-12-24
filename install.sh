@@ -11,3 +11,4 @@ ln -sf "/home/$SUDO_USER/.custom-config/terminator-config" "/home/$SUDO_USER/.co
 ln -sf "/home/$SUDO_USER/.custom-config/vim/vimrc" "/home/$SUDO_USER/.vim/vimrc"
 ln -sf "/home/$SUDO_USER/.custom-config/.gitconfig" "/home/$SUDO_USER/.gitconfig"
 ln -sf "/home/$SUDO_USER/.custom-config/vim/mydelek.vim" "/usr/share/vim/vim80/colors/mydelek.vim"
+ln -sf "/home/$SUDO_USER/.custom-config/ben.zsh-theme" "/home/$SUDO_USER/.oh-my-zsh/custom/theme/ben.zsh-theme"
