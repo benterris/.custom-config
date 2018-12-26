@@ -5,3 +5,7 @@ jmtpfs mounts an android device connected via USB
 ## Usage
 
 `jmtpfs someFolder` will detect a connected android device and mount it to someFolder
+
+To eject:
+
+`fusermount -u someFolder`
