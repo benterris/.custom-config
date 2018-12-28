@@ -1,0 +1,109 @@
+!! Appearance
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.background: black
+urxvt.foreground: gray
+
+!! Font preferences
+URxvt.font:             xft:Dejavu Sans Mono:pixelsize=15:antialias=true
+URxvt.boldFont:         xft:Dejavu Sans Mono:bold:antialias=true
+urxvt.italicFont:       xft:Dejavu Sans Mono:italic:antialias=true
+urxvt.boldItalicFont: xft:Dejavu Sans Mono:bold:italic:antialias=true
+!urxvt.letterSpace: -1
+
+!! Larger history limit
+urxvt.saveLines: 65535
+
+urxvt.meta8: true
+
+!! Perl extension
+urxvt.perl-ext-common: default,matcher,font-size,keyboard-select,fullscreen
+!! keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keyboard-select.clipboard: true
+
+!! font-size
+URxvt.keysym.C-plus:    font-size:increase
+URxvt.keysym.C-minus:   font-size:decrease
+URxvt.keysym.C-S-plus:  font-size:incglobal
+URxvt.keysym.C-S-minus: font-size:decglobal
+
+!! fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
+
+
+!! Open urls in browser with Control-Click
+urxvt.urlLauncher: /usr/bin/firefox
+urxvt.matcher.button: C1
+
+
+! special
+*.foreground:   #b7b7b7
+*.background:   #282828
+*.cursorColor:  #b7b7b7
+
+! black
+*.color0:       #555555
+*.color8:       #888888
+
+! red
+*.color1:       #9c3528
+*.color9:       #c71e09
+
+! green
+*.color2:       #488b2c
+*.color10:      #2d8703
+
+! yellow
+*.color3:       #f3b43a
+*.color11:      #fdd75a
+
+! blue
+*.color4:       #0d68a8
+*.color12:      #0f75bd
+
+! magenta
+*.color5:       #694f78
+*.color13:      #78399e
+
+! cyan
+*.color6:       #288e9c
+*.color14:      #37c3d6
+
+! white
+*.color7:       #a2a2a2
+*.color15:      #f9f9f9
+
+
+! Font
+!-- Xft settings -- !
+!Xft.dpi:        168
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.rgba:       rgba
+
+
+! Key codes
+
+URxvt.keysym.S-Up: \033[1;2A
+URxvt.keysym.S-Down: \033[1;2B
+URxvt.keysym.S-Right: \033[1;2C
+URxvt.keysym.S-Left: \033[1;2D
+URxvt.keysym.S-Home: \033[1;2H
+URxvt.keysym.S-End: \033[1;2F
+URxvt.keysym.C-Up: \033[1;5A
+URxvt.keysym.C-Down: \033[1;5B
+URxvt.keysym.C-Right: \033[1;5C
+URxvt.keysym.C-Left: \033[1;5D
+URxvt.keysym.C-S-Up: \033[1;6A
+URxvt.keysym.C-S-Down: \033[1;6B
+URxvt.keysym.Control-Tab: \033[27;5;9~
+
+!URxvt.keysym.C-equal:  font-size:reset
+!URxvt.keysym.C-slash:  font-size:show
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
