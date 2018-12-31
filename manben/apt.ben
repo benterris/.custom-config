@@ -1,0 +1,7 @@
+# Update sources
+
+To update the source list:
+
+add ppa to /etc/apt/sources.list
+then
+`sudo apt update`
