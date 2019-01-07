@@ -11,8 +11,13 @@
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["Z", "Z"],
-      "commands": [":w"]
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":w"
+      ]
     }
   ],
   "editor.formatOnSave": true,
@@ -41,5 +46,6 @@
   "vim.foldfix": true,
   "explorer.confirmDragAndDrop": false,
   "vim.useSystemClipboard": true,
-  "editor.cursorSmoothCaretAnimation": true
+  "editor.cursorSmoothCaretAnimation": true,
+  "telemetry.enableTelemetry": false
 }

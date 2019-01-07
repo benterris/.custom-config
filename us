@@ -833,7 +833,7 @@ xkb_symbols "altgr-intl" {
 // diversions from the MS Intl keyboard:
 
    key <AE01> { [        1, exclam,      onesuperior,  exclamdown      ] };
-   key <AD04> { [        r, R,           ediaeresis,   Ediaeresis      ] };
+   key <AD04> { [        r, R,           ecircumflex,   Ecircumflex      ] };
    key <AB02> { [        x, X,           oe,           OE              ] };
    key <AB04> { [        v, V,           registered,   registered      ] };
    key <AD02> { [        w, W,           egrave,       Egrave          ] };

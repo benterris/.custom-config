@@ -9,7 +9,7 @@ URxvt.font:             xft:Dejavu Sans Mono:pixelsize=15:antialias=true
 URxvt.boldFont:         xft:Dejavu Sans Mono:bold:antialias=true
 urxvt.italicFont:       xft:Dejavu Sans Mono:italic:antialias=true
 urxvt.boldItalicFont: xft:Dejavu Sans Mono:bold:italic:antialias=true
-!urxvt.letterSpace: -1
+urxvt.letterSpace: -1
 
 !! Larger history limit
 urxvt.saveLines: 65535

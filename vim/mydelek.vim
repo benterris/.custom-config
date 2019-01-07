@@ -28,11 +28,7 @@ hi NonText    ctermfg=Blue	   gui=bold guifg=gray guibg=white
 hi Pmenu      guibg=LightBlue
 hi PmenuSel   ctermfg=White	   ctermbg=DarkBlue  guifg=White  guibg=DarkBlue
 hi Question   ctermfg=DarkGreen    gui=bold guifg=SeaGreen
-if &background == "light"
-    hi Search     ctermfg=NONE	   ctermbg=Yellow guibg=Yellow guifg=NONE
-else
-    hi Search     ctermfg=black	   ctermbg=lightblue guibg=Yellow guifg=Black
-endif
+hi Search     ctermfg=black	   ctermbg=lightblue guibg=Yellow guifg=Black
 hi SpecialKey ctermfg=DarkBlue	   guifg=Blue
 hi StatusLine cterm=bold	   ctermbg=blue ctermfg=yellow guibg=gold guifg=blue
 hi StatusLineNC	cterm=bold	   ctermbg=blue ctermfg=black  guibg=gold guifg=blue
