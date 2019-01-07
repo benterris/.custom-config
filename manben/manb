@@ -10,7 +10,7 @@ done
 
 if [ $edit_flag = true ]
 then 
-   vim "$HOME/man/manben/$2.ben"
+   vim "$HOME/.custom-config/manben/$2.ben"
 else
-   less "$HOME/man/manben/$1.ben"
+   less "$HOME/.custom-config/manben/$1.ben"
 fi

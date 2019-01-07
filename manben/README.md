@@ -5,11 +5,11 @@ Personal section in the manual
 ## Install
 
 Needs the def of a `ben` man section: add `ben` section to the MANSECT, like in the /etc/manpath.config
-Also add home/man to the manpath (export from zshrc)
+(Maybe add home/man to the manpath (export from zshrc) but probably useless)
 
 ## Command
 
-To have the `manb` command, you need to cp the manb file to /usr/bin and give it execution access
+To have the `manb` command, you need ln the manb file to /usr/local/bin (and maybe give it execution access)
 
 ### Usage
 

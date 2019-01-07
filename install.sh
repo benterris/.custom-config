@@ -14,5 +14,6 @@ ln -sf "/home/$SUDO_USER/.custom-config/vim/mydelek.vim" "/usr/share/vim/vim80/c
 ln -sf "/home/$SUDO_USER/.custom-config/ben.zsh-theme" "/home/$SUDO_USER/.oh-my-zsh/custom/theme/ben.zsh-theme"
 ln -sf "/home/$SUDO_USER/.custom-config/.tmux.conf" "/home/$SUDO_USER/.tmux.conf"
 ln -sf "/home/$SUDO_USER/.custom-config/.Xdefaults" "/home/$SUDO_USER/.Xdefaults"
+ln -sf "/home/$SUDO_USER/.custom-config/manben/manb" "/usr/local/bin/manb"
 
 cp -r .urxvt ../.urxvt
