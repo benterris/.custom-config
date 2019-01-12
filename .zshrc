@@ -3,23 +3,96 @@
 PATH=$PATH:~/.local/bin
 
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/benjamin/.oh-my-zsh"
+# GENERAL EXPORTS
+# ===============
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+# Path to your oh-my-zsh installation.
+export ZSH="/home/$USER/.oh-my-zsh"
+export EDITOR='vim'
+export MANPATH="$MANPATH:$HOME/man"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Load a zsh theme (or "random" for a random theme)
 ZSH_THEME="ben"
 
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 zle_highlight=(default:bold)
 
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-completions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# KEYBINDINGS
+# ===========
+
+# Vim-like keybindings (a bit buggy)
+# bindkey -v
+
+# Bind ctrl-backspace to delete previous word
+bindkey '^H' backward-kill-word
+# Delete to the end of line
+bindkey '^O' kill-region
+# Edit the line in $EDITOR
+bindkey '^X' edit-command-line
+
+
+
+# ALIASES
+# =======
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+alias xcl="xclip -selection clipboard"
+alias tmr="gio trash"
+alias brg="xbacklight -set"
+alias cat="bat"
+alias du1="du . -ha --max-depth=1 | sort -h"
+alias goo="google-chrome-stable"
+alias ff="firefox"
+alias grep="grep -i"
+alias py="python3"
+alias v="vim"
+alias rr="ranger"
+alias gpom="git push origin master"
+alias pwg="pwgen -sy 16 1"
+alias tmux="tmux -2"
+alias cdd="cd .."
+alias cddd="cd ../.."
+alias cdddd="cd ../../.."
+alias cddddd="cd ../../../.."
+alias cdddddd="cd ../../../../.."
+
+# FUNCTIONS
+# =========
+
+# Turn a file into html and open it in chrome (for annoying formats)
+function tohtml() {
+    pandoc -s -t html -i "$1" -o "$1.html"
+    firefox-quantum "$1.html"
+}
+
+# Create a dir and cd into it
+function mkcd() {
+    mkdir -p -- "$1" && cd -P -- "$1"
+}
+
+# Load the z script
+. /home/$USER/apps/z/z.sh
+
+# DEFAULT SETTINGS
+# ================
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -62,33 +135,6 @@ zle_highlight=(default:bold)
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  zsh-completions
-)
-
-source $ZSH/oh-my-zsh.sh
-
-
-# bindkey -v
-
-# Bind ctrl-backspace to delete previous word
-bindkey '^H' backward-kill-word
-# Delete to the end of line
-bindkey '^O' kill-region
-# Edit the line in $EDITOR
-bindkey '^X' edit-command-line
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -98,58 +144,16 @@ bindkey '^X' edit-command-line
 # else
 #   export EDITOR='mvim'
 # fi
-export EDITOR='vim'
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias xcl="xclip -selection clipboard"
-alias tmr="gio trash"
-alias brg="xbacklight -set"
-alias cat="bat"
-alias du1="du . -ha --max-depth=1 | sort -h"
-alias goo="google-chrome-stable"
-alias ff="firefox-quantum"
-alias grep="grep -i"
-alias py="python3"
-alias v="vim"
-alias rr="ranger"
-alias gpom="git push origin master"
-alias pwg="pwgen -sy 25 1"
-alias tmux="tmux -2"
-
-# Turn a file into html and open it in chrome (for annoying formats)
-function tohtml() {
-    pandoc -s -t html -i "$1" -o "$1.html"
-    firefox-quantum "$1.html"
-}
-
-# Create a dir and cd into it
-function mkcd() {
-    mkdir -p -- "$1" && cd -P -- "$1"
-}
-
-
-alias cdd="cd .."
-alias cddd="cd ../.."
-alias cdddd="cd ../../.."
-alias cddddd="cd ../../../.."
-alias cdddddd="cd ../../../../.."
-
-. /home/benjamin/apps/z/z.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-export MANPATH="$MANPATH:$HOME/man"

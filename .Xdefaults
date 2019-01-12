@@ -44,7 +44,8 @@ urxvt.matcher.button: C1
 *.cursorColor:  #b7b7b7
 
 ! black
-*.color0:       #555555
+!*.color0:       #555555
+*.color0:       #000000
 *.color8:       #888888
 
 ! red

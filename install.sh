@@ -16,4 +16,8 @@ ln -sf "/home/$SUDO_USER/.custom-config/.tmux.conf" "/home/$SUDO_USER/.tmux.conf
 ln -sf "/home/$SUDO_USER/.custom-config/.Xdefaults" "/home/$SUDO_USER/.Xdefaults"
 ln -sf "/home/$SUDO_USER/.custom-config/manben/manb" "/usr/local/bin/manb"
 
-cp -r .urxvt ../.urxvt
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+cp -r .urxvt "/home/$SUDO_USER/.urxvt"

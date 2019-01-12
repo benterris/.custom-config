@@ -1,0 +1,3 @@
+## TMUX commands
+
+mod ! : send the current pane in a new, separate window
