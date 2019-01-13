@@ -34,9 +34,9 @@ URxvt.keysym.F11: perl:fullscreen:switch
 
 
 !! Open urls in browser with Control-Click
-urxvt.urlLauncher: /usr/bin/firefox
+URxvt.url-launcher: /usr/bin/xdg-open
 urxvt.matcher.button: C1
-
+URxvt.matcher.rend.0: Uline Bold
 
 ! special
 *.foreground:   #b7b7b7
