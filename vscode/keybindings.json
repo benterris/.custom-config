@@ -97,28 +97,8 @@
     "when": "terminalFocus"
   },
   {
-    "key": "meta+tab",
-    "command": "workbench.action.openNextRecentlyUsedEditorInGroup"
-  },
-  {
-    "key": "ctrl+tab",
-    "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
-  },
-  {
-    "key": "shift+meta+tab",
-    "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup"
-  },
-  {
-    "key": "ctrl+shift+tab",
-    "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
-  },
-  {
     "key": "meta+f12",
     "command": "editor.action.goToTypeDefinition"
-  },
-  {
-    "key": "ctrl+tab",
-    "command": "workbench.action.nextEditor"
   },
   {
     "key": "ctrl+pagedown",
@@ -127,10 +107,6 @@
   {
     "key": "ctrl+0",
     "command": "-workbench.action.focusSideBar"
-  },
-  {
-    "key": "ctrl+shift+tab",
-    "command": "workbench.action.previousEditor"
   },
   {
     "key": "ctrl+pageup",
@@ -159,5 +135,33 @@
   {
     "key": "ctrl+shift+w",
     "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+k ctrl+g",
+    "command": "workbench.action.maximizeEditor"
+  },
+  {
+    "key": "ctrl+k g",
+    "command": "workbench.action.evenEditorWidths"
   }
 ]
