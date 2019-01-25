@@ -1,0 +1,9 @@
+TRICKS
+======
+
+Add comma-separation in large number
+```python
+>>> '{:,}'.format(123456)
+'123,456'
+```
+
