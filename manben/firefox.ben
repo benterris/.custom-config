@@ -1,0 +1,5 @@
+# INSTALL
+
+To install side-by-side firefox-quantum with firefox-esr:
+- download firefox quantum and extract it in /opt
+- Optionally create a `firefox-quantum` script in /usr/bin and use it instead of `firefox` which will be rewritten by firefox-esr updates
