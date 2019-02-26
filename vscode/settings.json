@@ -29,7 +29,6 @@
     "editor.tabSize": 4
   },
   "prettier.trailingComma": "all",
-  "prettier.singleQuote": true,
   "prettier.tslintIntegration": true,
   "prettier.disableLanguages": [],
   "workbench.colorTheme": "Rebellion (rainglow)",
@@ -49,5 +48,10 @@
   "vetur.format.defaultFormatter.less": "none",
   "vetur.format.defaultFormatter.stylus": "none",
   "vetur.format.defaultFormatter.js": "none",
-  "vetur.format.defaultFormatter.ts": "none"
+  "vetur.format.defaultFormatter.ts": "none",
+  "workbench.tree.horizontalScrolling": true,
+  "prettier.singleQuote": true,
+  "editor.mouseWheelScrollSensitivity": -1,
+  "workbench.list.keyboardNavigation": "simple",
+  "clock.dateFormat": "HH:MM TT"
 }
