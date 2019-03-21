@@ -82,13 +82,26 @@ alias cdddddd="cd ../../../../.."
 
 # Turn a file into html and open it in chrome (for annoying formats)
 function tohtml() {
-    pandoc -s -t html -i "$1" -o "$1.html"
-    firefox-quantum "$1.html"
+  pandoc -s -t html -i "$1" -o "$1.html"
+  firefox-quantum "$1.html"
 }
 
 # Create a dir and cd into it
 function mkcd() {
-    mkdir -p -- "$1" && cd -P -- "$1"
+  mkdir -p -- "$1" && cd -P -- "$1"
+}
+
+# Quickly activate/deactivate system notifications in xfce
+function dnd() {
+  if [[ "$1" == "true" ]]; then
+    echo "Do not disturb mode enabled"
+  elif [[ "$1" == "false" ]]; then
+    echo "Notifications back on"
+  else
+    echo "Error: use 'dnd false' or 'dnd true' to activate or deactivate notifications"
+    return
+  fi	
+  xfconf-query --channel xfce4-notifyd --property /do-not-disturb --set "$1"
 }
 
 # Load the z script

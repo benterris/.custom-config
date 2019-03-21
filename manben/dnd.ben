@@ -1,0 +1,9 @@
+# DND: do not disturb
+
+Enable or disable the do-not-disturb mode in xfce
+
+## USAGE
+
+`dnd true` to disable notifications
+`dnd false` to have them back on
+
