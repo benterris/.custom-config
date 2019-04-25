@@ -1,0 +1,2 @@
+Pressing ctrl-s freezes the terminal (feature of the terminal OS driver)
+To unfreeze press ctrl-q

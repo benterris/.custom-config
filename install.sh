@@ -15,6 +15,7 @@ ln -sf "/home/$SUDO_USER/dotfiles/ben.zsh-theme" "/home/$SUDO_USER/.oh-my-zsh/cu
 ln -sf "/home/$SUDO_USER/dotfiles/.tmux.conf" "/home/$SUDO_USER/.tmux.conf"
 ln -sf "/home/$SUDO_USER/dotfiles/.Xdefaults" "/home/$SUDO_USER/.Xdefaults"
 ln -sf "/home/$SUDO_USER/dotfiles/manben/manb" "/usr/local/bin/manb"
+ln -sf "/home/$SUDO_USER/dotfiles/xfce4-keyboard-shortcuts.xml" "/home/$SUDO_USER/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
