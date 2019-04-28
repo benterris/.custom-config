@@ -1,0 +1,2 @@
+source ~/.vim/vimrc
+nnoremap <silent> <esc><esc> :nohls<cr>
