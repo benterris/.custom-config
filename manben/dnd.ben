@@ -7,3 +7,8 @@ Enable or disable the do-not-disturb mode in xfce
 `dnd true` to disable notifications
 `dnd false` to have them back on
 
+### SETUP
+
+On Ubuntu, to initialize the channel, run this command once:
+`xfconf-query --channel xfce4-notifyd --create --property /do-not-disturb --type bool --set true`
+
