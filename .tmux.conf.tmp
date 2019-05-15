@@ -1,0 +1,122 @@
+# Remove the status line
+# set -g status off
+
+# Support for 256 colors
+set -g default-terminal "tmux-256color"
+
+# No bells at all
+set -g bell-action none
+
+# Turn on xterm-keys so that additional function keys get escape sequences
+# set -g xterm-keys on
+
+# Change the prefix key to C-a
+set -g prefix C-a
+unbind C-b 
+bind C-a send-prefix
+
+# Turn the mouse on, but without copy mode dragging
+set -g mouse on
+# unbind -n MouseDrag1Pane
+# unbind -temacs-copy MouseDrag1Pane
+
+# Keybindings
+unbind -n C-W
+bind -n C-Tab select-pane -t :.+
+bind -n C-w kill-pane
+bind -n C-E split-window -h -c '#{pane_current_path}'
+bind -n C-O split-window -c '#{pane_current_path}'
+
+# vim
+# setw -g mode-keys vi
+# bind [ copy-mode
+# bind -t vi-copy v begin-selection
+# bind -t vi-copy y copy-selection
+# bind -t vi-copy V rectangle-toggle
+# bind ] paste-buffer
+
+# buffer
+# bind Space choose-buffer
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+# bind-key -T copy-mode-vi y send-keys -X copy-selection
+bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
+
+# set -g set-clipboard external
+# When copying in copy mode, send buffer to system clipboard
+# bind -t vi-copy y copy-pipe "xclip -i -selection clipboard" 
+# bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+
+# Some extra key bindings to select higher numbered windows
+bind F1 selectw -t:10
+bind F2 selectw -t:11
+bind F3 selectw -t:12
+bind F4 selectw -t:13
+bind F5 selectw -t:14
+bind F6 selectw -t:15
+bind F7 selectw -t:16
+bind F8 selectw -t:17
+bind F9 selectw -t:18
+bind F10 selectw -t:19
+bind F11 selectw -t:20
+bind F12 selectw -t:21
+
+# Keys to toggle monitoring activity in a window, and synchronize-panes
+bind m set monitor-activity
+bind y set synchronize-panes\; display 'synchronize-panes #{?synchronize-panes,on,off}'
+
+######################
+### DESIGN CHANGES ###
+######################
+
+# loud or quiet?
+set-option -g visual-activity off
+set-option -g visual-bell off
+set-option -g visual-silence off
+set-window-option -g monitor-activity off
+set-option -g bell-action none
+
+#  modes
+setw -g clock-mode-colour colour22
+setw -g mode-attr bold
+# setw -g mode-fg colour1
+# setw -g mode-bg colour18
+
+# panes
+set -g pane-border-style bg=default
+set -g pane-active-border-style bg=default
+set -g pane-active-border-style fg=green
+
+set -g window-style 'fg=colour8'
+set -g window-active-style 'fg=colour250'
+
+# statusbar
+set -g status on
+set -g status-position bottom
+set -g status-justify left
+set -g status-bg colour16
+set -g status-fg colour250
+set -g status-attr dim
+set -g status-left ''
+set -g status-right '#[fg=colour233,bg=colour22,bold] %d/%m #[fg=colour233,bg=colour8,bold] %H:%M '
+set -g status-right-length 50
+set -g status-left-length 20
+
+setw -g window-status-current-fg colour1
+setw -g window-status-current-bg colour10
+setw -g window-status-current-attr bold
+setw -g window-status-current-format ' #I#[fg=colour249]:#[fg=colour255]#W#[fg=colour249]#F '
+
+setw -g window-status-fg colour9
+setw -g window-status-bg colour22
+setw -g window-status-attr none
+setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
+
+setw -g window-status-bell-attr bold
+setw -g window-status-bell-fg colour255
+setw -g window-status-bell-bg colour1
+
+# messages
+set -g message-attr bold
+set -g message-fg colour250
+set -g message-bg colour94
