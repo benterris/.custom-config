@@ -1,7 +1,19 @@
-# Update sources
+## Update sources
 
 To update the source list:
 
 add ppa to /etc/apt/sources.list
 then
 `sudo apt update`
+
+## Upgrade one package only
+
+`sudo apt --only-upgrade some-package`
+
+## Install from backports
+
+Backports = ready to deploy in next release
+(need to add `deb http://deb.debian.org/debian stretch-backports main` - replace stretch with whatever release)
+By default download from backports is disabled (even if in source list), need a flag to install from there:
+`sudo apt -t stretch-backports install some-package`
+
