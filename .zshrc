@@ -12,6 +12,7 @@ export EDITOR='vim'
 export MANPATH="$MANPATH:$HOME/man"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export BETTER_EXCEPTIONS=1
 
 # Load a zsh theme (or "random" for a random theme)
 ZSH_THEME="ben"
@@ -25,6 +26,8 @@ zle_highlight=(default:bold)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
+  docker-compose
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-completions
