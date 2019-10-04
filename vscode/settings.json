@@ -15,7 +15,6 @@
       "commands": [":w"]
     }
   ],
-  "editor.formatOnSave": true,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -32,15 +31,13 @@
   "prettier.tslintIntegration": true,
   "prettier.disableLanguages": [],
   "workbench.colorTheme": "Rebellion (rainglow)",
-  "editor.fontSize": 20,
+  "editor.fontSize": 16,
   "workbench.panel.defaultLocation": "right",
-  "editor.detectIndentation": false,
   "terminal.integrated.fontSize": 15,
   "vim.foldfix": true,
   "explorer.confirmDragAndDrop": false,
   "vim.useSystemClipboard": true,
   "telemetry.enableTelemetry": false,
-  "editor.cursorSmoothCaretAnimation": true,
   "vetur.format.defaultFormatter.html": "none",
   "vetur.format.defaultFormatter.css": "none",
   "vetur.format.defaultFormatter.postcss": "none",
@@ -51,7 +48,11 @@
   "vetur.format.defaultFormatter.ts": "none",
   "workbench.tree.horizontalScrolling": true,
   "prettier.singleQuote": true,
-  "editor.mouseWheelScrollSensitivity": -1,
   "workbench.list.keyboardNavigation": "simple",
-  "clock.dateFormat": "HH:MM TT"
+  "clock.dateFormat": "HH:MM TT",
+  "window.menuBarVisibility": "toggle",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "onFocusChange"
 }
