@@ -1,0 +1,13 @@
+===================================
+DISABLE MIDDLE CLICK PASTE ON LINUX: 
+Install xbindkeys xsel xdotool
+
+Place this in ~/.xbindkeysrc
+
+"echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
+b:2 + Release
+
+Reload xbindkeys -p
+
+Run xbindkeys on startup, pkill xbindkeys to stop.
+(https://unix.stackexchange.com/questions/24330/how-can-i-turn-off-middle-mouse-button-paste-functionality-in-all-programs)
