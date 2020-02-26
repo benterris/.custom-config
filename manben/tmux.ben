@@ -1,3 +1,5 @@
 ## TMUX commands
 
 mod ! : send the current pane in a new, separate window
+mod } : move the current pane down
+mod { : move the current pane up

@@ -54,5 +54,7 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "python.formatting.provider": "black",
+  "html.mirrorCursorOnMatchingTag": false
 }
