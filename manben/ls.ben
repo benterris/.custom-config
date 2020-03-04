@@ -3,3 +3,4 @@
 -r reverse order while sorting
 -t sort by date, newest first
 -S sort by size
+-h human-readable

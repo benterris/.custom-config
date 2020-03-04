@@ -1,0 +1,7 @@
+
+PYTHON
+------
+
+! Wait: seems to break the virtualenv
+To select an interpreter out of the list add its path to the local folder settings like so:
+`"python.pythonPath": "/path/to/interpreter"`
