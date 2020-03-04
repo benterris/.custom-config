@@ -12,6 +12,7 @@ export EDITOR='vim'
 export MANPATH="$MANPATH:$HOME/man"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export BETTER_EXCEPTIONS=1
 
 # Load a zsh theme (or "random" for a random theme)
 ZSH_THEME="ben"
@@ -25,6 +26,8 @@ zle_highlight=(default:bold)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
+  docker-compose
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-completions
@@ -72,6 +75,10 @@ alias tmux="tmux -2"
 alias cls="clear;ls"
 alias fd="fd -HI"
 alias lst="ls -tr"
+alias gstu="git stash --include-untracked"
+alias ggcm="git log --left-right --graph --cherry-mark --oneline"
+alias code="GTK_IM_MODULE='xim' code"
+alias ssh="TERM=xterm-256color ssh"
 alias cdd="cd .."
 alias cddd="cd ../.."
 alias cdddd="cd ../../.."
@@ -81,7 +88,12 @@ alias cdddddd="cd ../../../../.."
 # FUNCTIONS
 # =========
 
-# Turn a file into html and open it in chrome (for annoying formats)
+function ggcmo() {
+  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  ggcm "$BRANCH"...origin/"$BRANCH"
+}
+
+# Turn a file into html and open it in firefox (for annoying formats)
 function tohtml() {
   pandoc -s -t html -i "$1" -o "$1.html"
   firefox-quantum "$1.html"

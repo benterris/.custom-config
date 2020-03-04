@@ -1,0 +1,5 @@
+READLINK
+
+Use it to print the full path of some file
+
+`readlink -f somefile.sh`

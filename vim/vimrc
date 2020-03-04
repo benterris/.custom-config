@@ -40,3 +40,6 @@ nmap <C-j> gj
 nmap <C-k> gk
 nmap <C-h> gh
 nmap <C-l> gl
+
+" binding to replace word with clipboard content
+nnoremap cp viw"0p
