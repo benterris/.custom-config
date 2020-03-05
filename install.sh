@@ -17,6 +17,7 @@ ln -sf "/home/$SUDO_USER/dotfiles/.Xdefaults" "/home/$SUDO_USER/.Xdefaults"
 ln -sf "/home/$SUDO_USER/dotfiles/manben/manb" "/usr/local/bin/manb"
 ln -sf "/home/$SUDO_USER/dotfiles/xfce4-keyboard-shortcuts.xml" "/home/$SUDO_USER/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
 ln -sf "/home/$SUDO_USER/dotfiles/idea/.ideavimrc" "/home/$SUDO_USER/.ideavimrc"
+ln -sf "/home/$SUDO_USER/dotfiles/.config/alacritty/alacritty.yml" "/home/$SUDO_USER/.config/alacritty/alacritty.yml"
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
