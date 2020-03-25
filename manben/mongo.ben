@@ -1,0 +1,19 @@
+Run mongo shell:
+<mongo install dir>/bin/mongo --options...
+or just (if in $PATH):
+mongo -u root -p password
+
+Show all dbs:
+show dbs
+
+Use a db:
+use somedb
+
+Show collections:
+show collections
+
+Show all records in a collection:
+db.somecollection.find()
+
+Same with formatting:
+db.somecollection.find().pretty()

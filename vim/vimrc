@@ -43,3 +43,6 @@ nmap <C-l> gl
 
 " binding to replace word with clipboard content
 nnoremap mm viw"0p
+nnoremap Y viwy
+nnoremap P "0p
+nnoremap W viw
