@@ -78,10 +78,10 @@
   # Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  #history: 10000
+  history: 10000
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
@@ -169,13 +169,72 @@
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
+schemes:
+  gruvbox-dark: &gruvbox
+    # Colors (Gruvbox dark)
+    primary:
+      # hard contrast: 
+      background: '#1d2021'
+      # medium constrast:
+      # background: '#282828'
+      # soft contrast: 
+      # background = '#32302f'
+      foreground: '#ebdbb2'
+  
+    # Normal colors
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+  
+    # Bright colors
+    bright:
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+  ben-custom: &ben-theme
+    primary:
+      background: '#000000'
+      foreground: '#b7b7b7'
+    # Normal colors
+    normal:
+      black:   '#000000'
+      red:     '#9c3528'
+      green:   '#488b2c'
+      yellow:  '#f3b43a'
+      blue:    '#0d68a8'
+      magenta: '#694f78'
+      cyan:    '#288e9c'
+      white:   '#a2a2a2'
+  
+    # Bright colors
+    bright:
+      black:   '#888888'
+      red:     '#c71e09'
+      green:   '#2d8703'
+      yellow:  '#fdd75a'
+      blue:    '#0f75bd'
+      magenta: '#78399e'
+      cyan:    '#37c3d6'
+      white:   '#f9f9f9'
+
 
 # Colors (Tomorrow Night Bright)
-colors:
+colors: *ben-theme
   # Default colors
-  primary:
-    background: '#000000'
-    foreground: '#b7b7b7'
+ # primary:
+ #   background: '#000000'
+ #   foreground: '#b7b7b7'
 
     # Bright and dim foreground colors
     #
@@ -203,26 +262,26 @@ colors:
   #  background: '#404040'
 
   # Normal colors
-  normal:
-    black:   '#000000'
-    red:     '#9c3528'
-    green:   '#488b2c'
-    yellow:  '#f3b43a'
-    blue:    '#0d68a8'
-    magenta: '#694f78'
-    cyan:    '#288e9c'
-    white:   '#a2a2a2'
+  #normal:
+  #  black:   '#000000'
+  #  red:     '#9c3528'
+  #  green:   '#488b2c'
+  #  yellow:  '#f3b43a'
+  #  blue:    '#0d68a8'
+  #  magenta: '#694f78'
+  #  cyan:    '#288e9c'
+  #  white:   '#a2a2a2'
 
-  # Bright colors
-  bright:
-    black:   '#888888'
-    red:     '#c71e09'
-    green:   '#2d8703'
-    yellow:  '#fdd75a'
-    blue:    '#0f75bd'
-    magenta: '#78399e'
-    cyan:    '#37c3d6'
-    white:   '#f9f9f9'
+  ## Bright colors
+  #bright:
+  #  black:   '#888888'
+  #  red:     '#c71e09'
+  #  green:   '#2d8703'
+  #  yellow:  '#fdd75a'
+  #  blue:    '#0f75bd'
+  #  magenta: '#78399e'
+  #  cyan:    '#37c3d6'
+  #  white:   '#f9f9f9'
 
   # Dim colors
   #
@@ -503,6 +562,8 @@ colors:
 key_bindings:
   - { key: Tab, mods: Control, chars: "\x1b[27;5;9~" }
   - { key: Tab, mods: Control|Shift, chars: "\x1b[27;6;9~" }
+  #- { key: W, mods: Control, chars: "exit\n" }
+  #- { key: W, mods: Control, command: { program: "exit", args: []} }
   # (Windows, Linux, and BSD only)
   #- { key: V,        mods: Control|Shift, action: Paste            }
   #- { key: C,        mods: Control|Shift, action: Copy             }

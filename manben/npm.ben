@@ -1,0 +1,16 @@
+NPM
+---
+
+
+> npm view somepackage
+> npm outdated -> shows packages not up to date
+
+To upgrade major versions :
+Install ncu :
+> npm i -g npm-check-updates
+
+Then use ncu like :
+> ncu -u
+or
+> ncu -f somepackage -u
+

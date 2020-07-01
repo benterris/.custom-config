@@ -3,3 +3,12 @@
 mod ! : send the current pane in a new, separate window
 mod } : move the current pane down
 mod { : move the current pane up
+mod d : detach current session
+
+
+# Attach running session
+
+tmux attach
+
+# Reload config
+tmux source ~/.tmux.conf

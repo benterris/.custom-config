@@ -13,6 +13,7 @@ export MANPATH="$MANPATH:$HOME/man"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 export BETTER_EXCEPTIONS=1
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 # Load a zsh theme (or "random" for a random theme)
 ZSH_THEME="ben"
@@ -78,8 +79,11 @@ alias lst="ls -tr"
 alias grbim="git rebase -i master"
 alias gstu="git stash --include-untracked"
 alias ggcm="git log --left-right --graph --cherry-mark --oneline"
+alias gloga="git log --branches --remotes --tags --graph --oneline --decorate"
+alias glogas="git log --graph --oneline --decorate --all"
 alias code="GTK_IM_MODULE='xim' code"
 alias ssh="TERM=xterm-256color ssh"
+alias mv="mv -i"
 alias cdd="cd .."
 alias cddd="cd ../.."
 alias cdddd="cd ../../.."
@@ -195,3 +199,8 @@ if [ -f '/home/ben/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ben
 if [ -f '/home/ben/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ben/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/home/ben/apps/git-fuzzy/bin:$PATH"
+
+
+
+# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'

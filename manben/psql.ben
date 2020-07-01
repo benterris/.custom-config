@@ -17,3 +17,6 @@ insert into table_name(id, first_name, last_name) values (1, 'john', 'doe'), (2,
 
 DELETE ROWS FROM A TABLE:
 delete from table_name where id = 1234;
+
+DELETE ALL ROWS FROM A TABLE:
+delete from table_name;

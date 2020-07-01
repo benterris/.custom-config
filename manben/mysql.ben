@@ -1,0 +1,17 @@
+Run mysql cli:
+> mysql -u root -p
+
+Show available databases :
+> show databases;
+
+Pretty print result:
+> select * from sometable \G;
+
+Select a database:
+> use somedb;
+
+Delete rows:
+> delete from sometable where somecolumn="something";
+
+
+

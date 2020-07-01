@@ -1,0 +1,5 @@
+To see a specific keycode run:
+xev
+
+Then to see the corresponding keycode :
+cat /usr/share/X11/xkb/keycodes/evdev | grep <somekeycode>

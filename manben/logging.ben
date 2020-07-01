@@ -1,0 +1,14 @@
+Logging (syslog, rsyslog, journald...)
+-------
+
+SYSLOG
+- Protocol defining a logging journal.
+Written in /var/log/syslog
+
+RSYSLOG
+Service to manage logs in syslog
+
+JOURNAL
+write to the journal :
+> echo 'hello' | systemd-cat
+

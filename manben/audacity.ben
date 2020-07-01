@@ -1,0 +1,10 @@
+Toggle overdub (ability to play and record at the same time) :
+transport > transport options > overdub (on/off)
+
+Mic not recognized :
+- make sure the mic is available and on, in pulseaudio control
+- turn off overdub
+- unplug mic
+- transport > rescan audio devices
+- select : ALSA | sysdefault | 2 (stereo) | sysdefault
+- plug mic in

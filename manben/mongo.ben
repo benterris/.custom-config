@@ -17,3 +17,14 @@ db.somecollection.find()
 
 Same with formatting:
 db.somecollection.find().pretty()
+
+Select only some fields:
+db.somecollection.find({}, {"somefield": true})
+
+Delete all rows from a collection:
+db.somecolletion.delete({})
+
+Delete all rows from a collection:
+db.somecolletion.deleteOne({"_id": "someid"})
+
+

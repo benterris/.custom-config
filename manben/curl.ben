@@ -6,3 +6,4 @@
   --data 'tel=61234567&type=1&ccc=33&lng=2.37&lat=48.85'`
 
 
+SSL certificate issues : add -k (or --insecure) to perform the request anyway
