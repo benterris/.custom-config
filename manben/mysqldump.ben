@@ -1,0 +1,12 @@
+dump data from mysql databases
+
+## Dump database to a file locally
+> mysqldump -u <username> -p<password (no space !)> <db name> [table name] -h <some.host.com>> dump.sql
+
+
+Ex:
+> mysqldump -u admin -ppassword seamless storage -h mainbotdb.cycrmf85a6ja.eu-west-1.rds.amazonaws.com > /tmp/dump.sql
+
+## Execute a dumped file to populate another db
+
+> mysql -h <host> -u <user> -D <db name> -p < /path/to/file.sql

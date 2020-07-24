@@ -1,0 +1,9 @@
+copy files from/to a remote server
+
+
+## Copy from a remote server
+> scp user@host:/path/to/remote/resource /path/to/local/destination
+
+
+## Copy to a remote server
+> scp /path/to/local/resource user@host:/path/to/remote/destination 

@@ -1,0 +1,10 @@
+Display info about a package :
+yum info somepackage
+
+Update all availables packages:
+yum update
+
+Update a single package:
+yum update somepackage
+
+
