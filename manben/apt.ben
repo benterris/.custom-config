@@ -10,6 +10,10 @@ then
 
 `sudo apt --only-upgrade some-package`
 
+## Check package info
+
+`sudo apt policy somepackage`
+
 ## Install from backports
 
 Backports = ready to deploy in next release

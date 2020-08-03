@@ -2,3 +2,7 @@
 ## OPTIONS
 
 -a list everything including files
+
+## SEE ALSO
+
+ncdu - ncurse interface for du

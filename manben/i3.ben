@@ -1,0 +1,12 @@
+logout :
+mod + shift + e
+
+set container layout:
+mod + e : default
+mod + s : stacking
+mod + w : tabbed
+
+floating mode :
+mod + shift + space : toggle
+mod + left button mouse : drag
+mod + right button mouse : resize

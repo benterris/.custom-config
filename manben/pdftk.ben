@@ -6,4 +6,4 @@ To concatenate two pdfs (cat) :
 `pdftk first.pdf second.pdf cat output merged.pdf` create a new pdf with second.pdf appended to first.pdf
 
 Selecting a subset of pages is possible:
-`pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8 output combined.pdf`
+`pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8-end output combined.pdf` (note: both bounds are included when giving a range, ie A1-2 gives pages 1&2)

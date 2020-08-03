@@ -8,3 +8,5 @@ Extract all the files into the /tmp dir:
 To only list the files:
 `unzip -l pix.zip`
 
+Unzip multiple files:
+`unzip '*.zip'` (note the single quotes)
