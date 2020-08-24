@@ -32,9 +32,14 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-completions
+  git-open
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# Fix the comments color in zsh-syntax-highlighting (default seems to use background color)
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[comment]='fg=white,bold'
 
 # KEYBINDINGS
 # ===========
