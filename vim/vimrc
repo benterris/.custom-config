@@ -42,7 +42,13 @@ nmap <C-h> gh
 nmap <C-l> gl
 
 " binding to replace word with clipboard content
-nnoremap mm viw"0p
+nnoremap MM viw"0p
+
+nnoremap mm ciw
+nnoremap m" ci"
+nnoremap m( ci(
+nnoremap m{ ci{
+nnoremap m[ ci[
+
 nnoremap Y viwy
-nnoremap P "0p
 nnoremap W viw
