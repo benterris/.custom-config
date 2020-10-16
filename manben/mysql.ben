@@ -13,5 +13,8 @@ Select a database:
 Delete rows:
 > delete from sometable where somecolumn="something";
 
+Filter by date:
+> select * from my_table where DATE(my_date_column) > '2020-04-20';
+
 
 
