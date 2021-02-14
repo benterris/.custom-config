@@ -12,7 +12,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -60,7 +60,7 @@
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  #startup_mode: Windowed
+  startup_mode: Fullscreen
 
   # Window title
   #title: Alacritty
@@ -562,6 +562,7 @@ colors: *ben-theme
 key_bindings:
   - { key: Tab, mods: Control, chars: "\x1b[27;5;9~" }
   - { key: Tab, mods: Control|Shift, chars: "\x1b[27;6;9~" }
+  - { key: F11, action: ToggleFullscreen }
   #- { key: W, mods: Control, chars: "exit\n" }
   #- { key: W, mods: Control, command: { program: "exit", args: []} }
   # (Windows, Linux, and BSD only)
