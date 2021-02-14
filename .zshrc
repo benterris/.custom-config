@@ -89,6 +89,7 @@ alias glogas="git log --graph --oneline --decorate --all"
 alias code="GTK_IM_MODULE='xim' code"
 alias ssh="TERM=xterm-256color ssh"
 alias mv="mv -i"
+alias dcoud="dco up -d"
 alias cdd="cd .."
 alias cddd="cd ../.."
 alias cdddd="cd ../../.."
@@ -198,10 +199,10 @@ function dnd() {
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/ben/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ben/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/ben/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ben/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/opt/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/home/ben/apps/git-fuzzy/bin:$PATH"

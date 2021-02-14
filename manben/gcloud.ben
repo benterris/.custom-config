@@ -1,0 +1,4 @@
+Temporary error in version 300.0.0 :
+Need to export libs directory like so :
+
+export LD_LIBRARY_PATH=/usr/local/lib

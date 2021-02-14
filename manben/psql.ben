@@ -1,22 +1,26 @@
 psql -U dbuser admindb
 
 LIST ALL DATABASES : 
-\l
+> \l
 
 CONNECT TO A DB :
-\c admindb;
+> \c admindb;
 
 LIST ALL TABLES:
-\dt
+> \dt
 
 VIEW TABLE DETAILS:
-\d+ table_name
+> \d+ table_name
 
 ADD DATA TO A TABLE:
-insert into table_name(id, first_name, last_name) values (1, 'john', 'doe'), (2, 'james', 'die');
+> insert into table_name(id, first_name, last_name) values (1, 'john', 'doe'), (2, 'james', 'die');
 
 DELETE ROWS FROM A TABLE:
-delete from table_name where id = 1234;
+> delete from table_name where id = 1234;
 
 DELETE ALL ROWS FROM A TABLE:
-delete from table_name;
+> delete from table_name;
+
+DROP A TABLE
+Optionally use `cascade` to cascade deletion to related entities
+> drop table table_name [cascade];

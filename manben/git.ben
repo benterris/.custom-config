@@ -1,0 +1,6 @@
+# git
+
+## Useful git commands
+
+Delete local tags that do not exist on remote :
+> git fetch --prune origin "+refs/tags/*:refs/tags/*"
