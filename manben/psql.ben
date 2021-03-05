@@ -24,3 +24,6 @@ DELETE ALL ROWS FROM A TABLE:
 DROP A TABLE
 Optionally use `cascade` to cascade deletion to related entities
 > drop table table_name [cascade];
+
+ENABLE EXPANDED DISPLAY
+> \x on

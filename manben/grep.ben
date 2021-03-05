@@ -1,0 +1,4 @@
+
+
+grep recursively through directories :
+> grep -r "sometext" .

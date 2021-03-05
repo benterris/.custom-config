@@ -4,11 +4,17 @@ Run mysql cli:
 Show available databases :
 > show databases;
 
+Connect to a database:
+> use somedb;
+
+Show available tables :
+> show tables;
+
+Show column details :
+> describe sometable;
+
 Pretty print result:
 > select * from sometable \G;
-
-Select a database:
-> use somedb;
 
 Delete rows:
 > delete from sometable where somecolumn="something";
